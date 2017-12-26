@@ -25,9 +25,9 @@ install.shをworkspaceの直下に置きます。
     <Directory /home/ubuntu/workspace/public> #10行目
 
 ## データベースの作成方法
-※データベース名とユーザー名のhomesteadとパスワードのsecretは.envのデフォルトです  
+※データベース名とユーザー名のhomesteadとパスワードのsecretは.envのデフォルトです。  
 
-    mysql-ctl start  
+    mysql-ctl start  
     mysql -u root  
     create database homestead;  
     grant all on homestead.*  to homestead@localhost identified by 'secret';
