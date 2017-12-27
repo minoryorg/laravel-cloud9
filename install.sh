@@ -4,7 +4,7 @@
 sudo add-apt-repository ppa:ondrej/php
 sudo apt-get update
 
-# PHP modules for Apache
+# PHP Modules for Apache
 sudo apt-get install libapache2-mod-php7.1
 sudo a2dismod php5
 sudo a2enmod php7.1
@@ -29,8 +29,13 @@ shopt -s dotglob
 mv laravel/* ./
 rm -rf laravel
 
+# Create User and Database
 mysql-ctl start
-mysql -u root -e "create database homestead;grant all on homestead.* to homestead@localhost identified by 'secret';"
+mysql -u root -e "create user homestead;create database homestead;grant all on homestead.* to homestead@localhost identified by 'secret';"
+
+# Authentication and Migration
+php artisan make:auth
+php artisan migrate
 
 # End
 echo "done!"
