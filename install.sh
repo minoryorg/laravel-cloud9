@@ -29,6 +29,9 @@ shopt -s dotglob
 mv laravel/* ./
 rm -rf laravel
 
+mysql-ctl start
+mysql -u root -e "create database homestead;grant all on homestead.* to homestead@localhost identified by 'secret';"
+
 # End
 echo "done!"
 exit
