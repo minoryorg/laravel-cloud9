@@ -3,6 +3,18 @@
 Shell script for running "Laravel" with "Cloud 9" (Automatically installing PHP7 + Composer + Laravel)  
 install.shは、オンラインIDEのCloud9でPHP7（7.1.12）とLaravel 5.5.22とMySQL 5.7.20（2017年12月時点）が動作する環境を自動で構築するためのシェルスクリプトです。  
 
+### 2018/1/9更新
+
+* Adminerの追加
+
+### 2017/12/27更新
+
+* MySQL自動アップデート追加
+* データベースの自動構築（.envのデフォルト）
+* Laravel認証機能の追加
+* ドキュメントルートの設定追加（.htaccessによる）
+* Laravelの日本語化（https://github.com/minoryorg/laravel-resources-lang-ja）
+
 ## 使い方
 
 install.shをworkspaceの直下に置きます。  
