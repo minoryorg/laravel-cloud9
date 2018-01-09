@@ -78,6 +78,9 @@ git clone https://github.com/minoryorg/laravel-resources-lang-ja.git
 mv laravel-resources-lang-ja/resources/lang/* ./resources/lang/
 sed -i -e "s|'locale' => 'en',|'locale' => 'ja',|g" config/app.php
 
+# Add Adminer (Database management in a single PHP file) from https://www.adminer.org/
+wget -O ./public/adminer.php https://www.adminer.org/static/download/4.3.1/adminer-4.3.1.php
+
 # Remove File and Folder
 rm -rf laravel
 rm -rf laravel-resources-lang-ja
