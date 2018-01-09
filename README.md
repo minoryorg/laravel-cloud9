@@ -13,7 +13,7 @@ install.shは、オンラインIDEのCloud9でPHP7（7.1.12）とLaravel 5.5.22�
 * データベースの自動構築（.envのデフォルト）
 * Laravel認証機能の追加
 * ドキュメントルートの設定追加（.htaccessによる）
-* Laravelの日本語化（https://github.com/minoryorg/laravel-resources-lang-ja）
+* Laravelの日本語化 (https://github.com/minoryorg/laravel-resources-lang-ja)
 
 ## 使い方
 
