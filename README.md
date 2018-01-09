@@ -17,7 +17,7 @@ install.shは、オンラインIDEのCloud9でPHP7（7.1.12）とLaravel 5.5.22�
 
 ## 使い方
 
-install.shをworkspaceの直下に置きます。  
+install.shをCloud9のworkspaceの直下に置きます。  
 
     wget https://raw.githubusercontent.com/minoryorg/laravel-cloud9/master/install.sh
 
