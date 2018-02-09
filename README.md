@@ -22,29 +22,26 @@ install.shは、オンラインIDEのCloud9でPHP7（7.1.12）とLaravel 5.5.22�
 
 ## 使い方
 
-install.shをCloud9のworkspaceの直下に置きます。  
+install.shをダウンロードしてCloud9のworkspace直下に置きます。  
 
     wget https://raw.githubusercontent.com/minoryorg/laravel-cloud9/master/install.sh
 
-そして、下記のように実行するだけです。  
-※単純に実行するとエラーが出ます。  
+そして、下記のように権限を与えて実行するだけです。  
 
     chmod 777 install.sh
     ./install.sh
 
-不要になりました。  
+改行コードをLFに変更したため、以下不要になりました。  
 ~~sed -i 's/\r//' install.sh~~   
 
+強制実行に対応したため、以下不要になりました。
 ~~あとは、メッセージに従って[Enter]を押すなり、[Y][Enter]を押すなりしてください。~~  
   
 「done!」が表示されれば完了です。  
 
-以下も不要になりました。  
-
+ドキュメントルートも設定し、データベースも自動構築しますので、以下も不要になりました。  
 ~~動作確認をする前に、ドキュメントルートの変更をお忘れなく。~~  
-
 ## ~~ドキュメントルートの変更方法~~
-
 ## ~~データベースの作成方法~~
 
 ## その他
