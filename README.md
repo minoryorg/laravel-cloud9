@@ -30,10 +30,10 @@ install.shをCloud9のworkspaceの直下に置きます。  
 ※単純に実行するとエラーが出ます。  
 
     chmod 777 install.sh
-    ./install.sh
+    ./install.sh
 
 不要になりました。  
-~~sed -i 's/\r//' install.sh~~ 
+~~sed -i 's/\r//' install.sh~~   
 
 ~~あとは、メッセージに従って[Enter]を押すなり、[Y][Enter]を押すなりしてください。~~  
   
