@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# 2017/12/27
-# Update to PHP7 (v7.1.12) MySQL (v5.7.20)
+# 2018/11/12
+# Update to PHP7 (v7.2.11) MySQL (v5.7.24)
 
 # How to use on Cloud9
 # chmod 777 install.sh
@@ -9,7 +9,7 @@
 
 LANG=en_GB.UTF-8
 
-# Add PHP 7.1.x Repository
+# Add PHP 7.2.x Repository
 sudo add-apt-repository ppa:ondrej/php -y
 
 # Copy filename from http://dev.mysql.com/downloads/repo/apt/
@@ -30,18 +30,18 @@ sudo -E dpkg -i ${mysql_apt_deb_file}
 sudo apt-get -y update
 
 # PHP Modules for Apache
-sudo apt-get -y install libapache2-mod-php7.1
+sudo apt-get -y install libapache2-mod-php7.2
 sudo a2dismod php5
-sudo a2enmod php7.1
+sudo a2enmod php7.2
 
 # Add Module for Laravel 5.5
-sudo apt-get -y install php7.1-openssl
-sudo apt-get -y install php7.1-pdo
-sudo apt-get -y install php7.1-mbstring
-sudo apt-get -y install php7.1-tokenizer
-sudo apt-get -y install php7.1-xml
+sudo apt-get -y install php7.2-openssl
+sudo apt-get -y install php7.2-pdo
+sudo apt-get -y install php7.2-mbstring
+sudo apt-get -y install php7.2-tokenizer
+sudo apt-get -y install php7.2-xml
 # Use MySQL
-sudo apt-get -y install php7.1-mysql
+sudo apt-get -y install php7.2-mysql
 
 # Upgrade MySQL Version 5.7.x
 sudo apt-get -y install mysql-server
