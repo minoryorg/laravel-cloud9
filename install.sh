@@ -54,7 +54,7 @@ mysql -u root -e "create user homestead;create database homestead;grant all on h
 # Composer install 
 curl -sS https://getcomposer.org/installer | php
 
-# Laravel install
+# Laravel 5.5 install
 composer create-project --prefer-dist laravel/laravel=5.5.* laravel
 shopt -s dotglob
 mv laravel/* ./
@@ -79,7 +79,7 @@ mv laravel-resources-lang-ja/resources/lang/* ./resources/lang/
 sed -i -e "s|'locale' => 'en',|'locale' => 'ja',|g" config/app.php
 
 # Add Adminer (Database management in a single PHP file) from https://www.adminer.org/
-wget -O ./public/adminer.php https://www.adminer.org/static/download/4.6.2/adminer-4.6.2.php
+wget -O ./public/adminer.php https://www.adminer.org/static/download/4.6.3/adminer-4.6.3.php
 
 # Remove File and Folder
 rm -rf laravel
