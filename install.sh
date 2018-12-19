@@ -40,6 +40,7 @@ sudo apt-get -y install php7.2-pdo
 sudo apt-get -y install php7.2-mbstring
 sudo apt-get -y install php7.2-tokenizer
 sudo apt-get -y install php7.2-xml
+sudo apt-get -y install php7.2-curl
 # Use MySQL
 sudo apt-get -y install php7.2-mysql
 
